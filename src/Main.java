@@ -10,7 +10,7 @@ import java.util.Locale;
 public class Main {
     public static void main(String[] args) {
 
-        /*
+ /*
         //variaveis
         String nome = "Autor: Washington";
         System.out.println(nome);
@@ -36,7 +36,8 @@ public class Main {
         //operador ternario
         String mensagem = fimDeSemana ? "E fim de semana" : "Não é fim de semana";
         System.out.println(mensagem);
-
+*/
+/*
         //Condicionais
         int nota = 1;
         String graduacao;
@@ -67,6 +68,8 @@ public class Main {
                 System.out.println("Graduação invalida");
         }
 
+*/
+/*
         // Representando datas
         String nome = "Washington Gomes";
 
@@ -87,23 +90,25 @@ public class Main {
             saudacao = "Olá";
         }
         System.out.printf("Olá, %s. Hoje é %s %s %n", nome, diaSemana, saudacao.toUpperCase() );
-
-
+*/
+/*
+            //for dentro outro for
             for(int i=1; i<=10; i++){
                 for(int j=1; j<=10; j++)
                     System.out.println(j + " X " + i + "=" + j * i);
                     // 1x1=1
                     // 2x1=2
             }
-
-
+*/
+       // Arrays -  EX01 - for
        String[] letras = {"A","B","C","D","J","X",};
        for (int i=0 ; i < letras.length; i++){
           System.out.println(letras[i]);
       }
         System.out.println(Arrays.toString((letras)));
-*/
 
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
+        // Ex 02 - for
         int[] numeros = {1,2,3,4,10,5,6};
         int maior = numeros[0];
         int menor = numeros[0];
@@ -123,6 +128,6 @@ public class Main {
         System.out.println("Menor: " + menor);
         System.out.println("Media: " + media / numeros.length);
 
-
+         }
     }
-}
+
