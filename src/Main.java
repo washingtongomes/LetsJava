@@ -1,8 +1,10 @@
 import javax.swing.text.html.HTMLDocument;
+import java.sql.Array;
 import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 import java.time.LocalDate;
 import java.time.format.TextStyle;
+import java.util.Arrays;
 import java.util.Locale;
 
 public class Main {
@@ -86,13 +88,41 @@ public class Main {
         }
         System.out.printf("Olá, %s. Hoje é %s %s %n", nome, diaSemana, saudacao.toUpperCase() );
 
-         */
+
             for(int i=1; i<=10; i++){
                 for(int j=1; j<=10; j++)
                     System.out.println(j + " X " + i + "=" + j * i);
                     // 1x1=1
                     // 2x1=2
             }
+
+
+       String[] letras = {"A","B","C","D","J","X",};
+       for (int i=0 ; i < letras.length; i++){
+          System.out.println(letras[i]);
+      }
+        System.out.println(Arrays.toString((letras)));
+*/
+
+        int[] numeros = {1,2,3,4,10,5,6};
+        int maior = numeros[0];
+        int menor = numeros[0];
+        int media = 0;
+
+        for (int i=0; i < numeros.length; i++){
+            if(numeros[i] > maior){
+                maior = numeros[i];
+            }
+            if(numeros[i] < menor){
+                menor= numeros[i];
+            }
+            media += numeros[i];
+        }
+
+        System.out.println("Maior: " + maior);
+        System.out.println("Menor: " + menor);
+        System.out.println("Media: " + media / numeros.length);
+
 
     }
 }
