@@ -1,8 +1,12 @@
 import java.sql.SQLOutput;
+import java.time.LocalDate;
+import java.time.format.TextStyle;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
 
+        /*
         //variaveis
         String nome = "Autor: Washington";
         System.out.println(nome);
@@ -30,7 +34,7 @@ public class Main {
         System.out.println(mensagem);
 
         //Condicionais
-        int nota = 100;
+        int nota = 1;
         String graduacao;
 
         // A=80,  B=70, C=60, D=0
@@ -46,7 +50,6 @@ public class Main {
             graduacao = "";
         }
         //Estrutura Switch
-
         switch (graduacao) {
             case "A":
             case "B":
@@ -58,8 +61,18 @@ public class Main {
                 break;
             default:
                 System.out.println("Graduação invalida");
-
         }
+        */
+
+        // Representando datas
+        String nome = "Washington Gomes";
+
+        //ISO 8601
+        LocalDate hoje = LocalDate.now();
+        Locale brasil = new Locale("pt" , "BR");
+        System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil ));
+
+
 
     }
 
